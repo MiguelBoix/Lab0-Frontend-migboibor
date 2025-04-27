@@ -3,7 +3,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import * as React from 'react'
 import ControlPanelScreen from './src/screens/controlPanel/ControlPanelScreen'
 import ProfileScreen from './src/screens/profile/ProfileScreen'
-import RestaurantScreen from './src/screens/restaurants/RestaurantScreen'
+/* import RestaurantScreen from './src/screens/restaurants/RestaurantsScreen' */
+import RestaurantsStack from './src/screens/restaurants/RestaurantsStack'
 
 const Tab = createBottomTabNavigator()
 
@@ -13,7 +14,7 @@ export default function App () {
       <Tab.Navigator>
         <Tab.Screen
           name="Restaurants"
-          component={RestaurantScreen} />
+          component={RestaurantsStack} />
         <Tab.Screen
           name="Control Panel"
           component={ControlPanelScreen} />
